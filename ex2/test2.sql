@@ -78,6 +78,7 @@ left join project_users on projects.project_id = project_users.project_id
 group by projects.project_id, projects.project_name, project_users.project_id;
 
 -- Câu 4. Viết lệnh sql để lấy ra danh sách các project của company có company_name = “monstar-lab” 
+
 select *from projects inner join companies
 on projects.company_id = companies.company_id
 where companies.company_name like 'monstar_lab';
